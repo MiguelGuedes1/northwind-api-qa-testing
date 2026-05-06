@@ -242,7 +242,7 @@ newman run postman/northwind-collection.json -e postman/northwind-environment.js
 
 **Miguel Guedes**  
 QA Tester | Porto, Portugal  
-[GitHub](https://github.com/MiguelGuedes1) · [LinkedIn](https://www.linkedin.com/in/miguel-guedes)
+[GitHub](https://github.com/MiguelGuedes1) · [LinkedIn](https://www.linkedin.com/in/miguel-guedes1/)
 
 ---
 
