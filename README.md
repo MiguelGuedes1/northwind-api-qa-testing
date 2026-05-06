@@ -102,9 +102,9 @@ Each request includes multiple assertions validating status codes, response stru
 
 ### Newman Report — 75/75 Passed
 
-![Newman Report](docs/postman-screenshots/01-newman-report.png)
+![Newman Report](docs/postman/postman-screenshots/01-newman-report.png)
 
-![Postman Collection Run](docs/postman-screenshots/02-postman-collection-run.png)
+![Postman Collection Run](docs/postman/postman-screenshots/02-postman-collection-run.png)
 
 ---
 
