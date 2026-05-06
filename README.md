@@ -128,13 +128,13 @@ npx cypress run
 
 ### Cypress Reports
 
-![Customers Report] 01 - (docs/cypress/cypress_report_screenshots/customers01-cypress-report.png)
+![Customers Report 01](docs/cypress/cypress_report_screenshots/customers01-cypress-report.png)
 
-![Customers Report] 02 - (docs/cypress/cypress_report_screenshots/customers02-cypress-report.png)
+![Customers Report 02](docs/cypress/cypress_report_screenshots/customers02-cypress-report.png)
 
-![Employees Report] 01 - (docs/cypress/cypress_report_screenshots/employees-cypress-report.png)
+![Employees Report](docs/cypress/cypress_report_screenshots/employees-cypress-report.png)
 
-![Orders Report] 01 - (docs/cypress/cypress_report_screenshots/orders-cypress-report.png)
+![Orders Report](docs/cypress/cypress_report_screenshots/orders-cypress-report.png)
 
 
 
