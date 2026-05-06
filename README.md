@@ -1,4 +1,4 @@
-# 🧪 Northwind API | QA Testing Project
+# Northwind API | QA Testing Project
 
 ![Tests](https://img.shields.io/badge/Postman-75%2F75%20Passed-brightgreen?logo=postman)
 ![Cypress](https://img.shields.io/badge/Cypress-13%2F13%20Passed-brightgreen?logo=cypress)
