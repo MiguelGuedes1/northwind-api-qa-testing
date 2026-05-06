@@ -128,7 +128,15 @@ npx cypress run
 
 ### Cypress Reports
 
-![Customers Report](docs/cypress/cypress_report_screenshots/customers-cypress-report.png)
+![Customers Report] 01 - (docs/cypress/cypress_report_screenshots/customers01-cypress-report.png)
+
+![Customers Report] 02 - (docs/cypress/cypress_report_screenshots/customers02-cypress-report.png)
+
+![Employees Report] 01 - (docs/cypress/cypress_report_screenshots/employees-cypress-report.png)
+
+![Orders Report] 01 - (docs/cypress/cypress_report_screenshots/orders-cypress-report.png)
+
+
 
 ---
 
@@ -164,13 +172,13 @@ ORDER BY TotalAmount DESC;
 
 ### SQL Screenshots
 
-![Database Overview](docs/sql-screenshots/01-database-overview.png)
+![Database Overview](docs/sql/sql-screenshots/01-database-overview.png)
 
-![Customers by Country](docs/sql-screenshots/02-customers-by-country.png)
+![Customers by Country](docs/sql/sql-screenshots/02-customers-by-country.png)
 
-![Top Sales](docs/sql-screenshots/03-top-sales-by-order.png)
+![Top Sales](docs/sql/sql-screenshots/03-top-sales-by-order.png)
 
-![Employees Orders](docs/sql-screenshots/04-employees-orders.png)
+![Employees Orders](doc/sql/sql-screenshots/04-employees-orders.png)
 
 ---
 
