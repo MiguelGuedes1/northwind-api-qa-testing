@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-06T15:56:51.469Z",
+    "end": "2026-05-06T15:56:51.869Z",
+    "duration": 400,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "74372e27-212c-4989-b025-91803760c1b3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\orders.cy.js",
+      "file": "cypress\\e2e\\orders.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0267a456-3efd-48c1-bfc4-a9bab51fc0b2",
+          "title": "Orders API",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET /orders - should return 200 and array of orders",
+              "fullTitle": "Orders API GET /orders - should return 200 and array of orders",
+              "timedOut": null,
+              "duration": 203,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', `${baseUrl}/orders`).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.be.an('array');\n  expect(response.body.length).to.be.greaterThan(0);\n  expect(response.body[0]).to.have.property('OrderID');\n  expect(response.body[0]).to.have.property('CustomerID');\n  expect(response.body[0]).to.have.property('OrderDate');\n});",
+              "err": {},
+              "uuid": "8befcc65-67f9-49d6-9adc-4a5ecba0e929",
+              "parentUUID": "0267a456-3efd-48c1-bfc4-a9bab51fc0b2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET /orders/:id - should return correct order",
+              "fullTitle": "Orders API GET /orders/:id - should return correct order",
+              "timedOut": null,
+              "duration": 53,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', `${baseUrl}/orders/10248`).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.be.an('object');\n  expect(response.body.OrderID).to.eq(10248);\n});",
+              "err": {},
+              "uuid": "863b1948-d7f1-4c6b-9706-429ea1c01866",
+              "parentUUID": "0267a456-3efd-48c1-bfc4-a9bab51fc0b2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET /orders/:id - should return 404 for invalid ID",
+              "fullTitle": "Orders API GET /orders/:id - should return 404 for invalid ID",
+              "timedOut": null,
+              "duration": 46,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: `${baseUrl}/orders/99999`,\n  failOnStatusCode: false\n}).then(response => {\n  expect(response.status).to.eq(404);\n  expect(response.body.error).to.eq('Order not found');\n});",
+              "err": {},
+              "uuid": "7a938d5b-6f52-4203-9fa9-6873b8c739dc",
+              "parentUUID": "0267a456-3efd-48c1-bfc4-a9bab51fc0b2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8befcc65-67f9-49d6-9adc-4a5ecba0e929",
+            "863b1948-d7f1-4c6b-9706-429ea1c01866",
+            "7a938d5b-6f52-4203-9fa9-6873b8c739dc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 302,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "docs/cypress/cypress-report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

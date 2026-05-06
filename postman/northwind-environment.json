@@ -1,0 +1,16 @@
+{
+	"id": "27f99117-5aeb-4ed4-803d-f38c4321795d",
+	"name": "Northwind Local",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-05-06T15:15:43.338Z",
+	"_postman_exported_using": "Postman/12.9.2"
+}
